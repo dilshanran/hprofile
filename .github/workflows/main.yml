@@ -1,5 +1,5 @@
 name: Hprofile Actions
-on: [push, workflow_dispatch]
+on: [push, workflow_dispatch] # once push start workflwo auto trigger
 
 env:
   AWS_REGION: us-east-1
@@ -17,7 +17,7 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v4
 
-      # Run Maven tests
+      
       - name: Maven test
         run: mvn test
       
