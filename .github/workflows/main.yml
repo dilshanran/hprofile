@@ -25,7 +25,7 @@ jobs:
           distribution: 'temurin' # Available options: temurin, zulu, etc.
           java-version: '11'
 
-      # Setup SonarScanner
+      # Setup SonarScanner project
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
 
